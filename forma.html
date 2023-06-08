@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкета</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #bebebe;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p style="color: hotpink; font-size: 50px;">Анкета</p>
+    </header>
+<ul>
+            <li><h2><a href="index.html">Головна</a></h2></li>
+            <li><h2><a href="resume.html">Про мене</a></h2></li>
+            <li><h2><a href="forma.html">Анкета</a></h2></li>
+            </ul>
+    <main>
+        <form action="submit.php" method="POST">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="age">Вік:</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            
+        </form>
+    </main>
+<p style="text-align: center;"><br>
+<button onclick="alert('Дякую за заповнення форми!')">Відправити результат</button>
+<br>
+</p>
+    <footer>
+        <p style="text-align: right;">© 2023 Made by Mar4ello. All rights reserved.</p>
+    </footer>
+</body>
+</html>
